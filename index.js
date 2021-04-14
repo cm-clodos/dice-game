@@ -25,7 +25,7 @@ function player1 (randomNumber1) {
     else if (randomNumber1 == 6){
         document.querySelector(".img1").setAttribute("src","images/dice6.png");
     }
-
+    
 }
 
 function player2 (randomNumber2) {
@@ -64,7 +64,8 @@ function vergleich() {
     }
     
 }
-player1(randomNumber1);
-player2(randomNumber2);
+document.querySelector(".btn1").addEventListener("click", player1);
+document.querySelector(".btn2").addEventListener("click", player2);
+
 vergleich();
 
